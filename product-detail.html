@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi Tiết Cá Cảnh - AquaParadise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <div class="logo-icon"><i class="fas fa-fish"></i></div>
+          <span>Aqua</span>Paradise
+        </a>
+        <ul class="nav-menu" id="mobileMenu">
+          <li><a href="index.html#hero" class="nav-link">Trang Chủ</a></li>
+          <li><a href="products.html" class="nav-link">Sản Phẩm</a></li>
+          <li class="nav-dropdown">
+            <div class="nav-dropdown-heading">
+              <a href="index.html#products" class="nav-link">Danh Mục Cá</a>
+              <button class="nav-dropdown-toggle" type="button" aria-label="Mở danh sách danh mục cá" aria-expanded="false" aria-controls="categoryDropdown">
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+            </div>
+            <ul class="category-dropdown" id="categoryDropdown">
+              <li><a href="index.html?category=all#products" data-nav-category="all">Tất Cả Cá Cảnh</a></li>
+              <li><a href="index.html?category=dragon#products" data-nav-category="dragon">Cá Rồng</a></li>
+              <li><a href="index.html?category=koi#products" data-nav-category="koi">Cá Koi & Cá Vàng</a></li>
+              <li><a href="index.html?category=betta#products" data-nav-category="betta">Cá Betta & Guppy</a></li>
+              <li><a href="index.html?category=discus#products" data-nav-category="discus">Cá Thần Tiên - Cá Dĩa</a></li>
+              <li><a href="index.html?category=aquascape#products" data-nav-category="aquascape">Cá Thủy Sinh Nhỏ</a></li>
+              <li><a href="index.html?category=predator#products" data-nav-category="predator">Cá Săn Mồi & Phong Thủy</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#features" class="nav-link">Dịch Vụ & Bảo Hành</a></li>
+          <li><a href="index.html#about" class="nav-link">Kinh Nghiệm Nuôi</a></li>
+        </ul>
+        <div class="header-actions">
+          <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Mở menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container product-detail-page">
+    <a class="product-detail-back" href="products.html">
+      <i class="fas fa-arrow-left"></i> Quay lại danh sách cá
+    </a>
+    <article class="product-detail-card" id="productDetail" aria-live="polite"></article>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© Nguyễn Minh Tiến - 2026 AquaParadise - Trang web cá cảnh tĩnh chuyên nghiệp. Thiết kế phục vụ môn học WEB1044.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Nạp mảng cá và hàm hiển thị chi tiết dùng chung. -->
+  <script src="fish-products.js"></script>
+  <script src="product-detail.js"></script>
+</body>
+</html>

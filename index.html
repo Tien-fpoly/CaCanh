@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AquaParadise - Thế Giới Cá Cảnh Thủy Sinh Thượng Hạng</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Bar
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-info">
+        <span><i class="fas fa-phone-alt"></i> Hotline: <strong>1900 6868 (8:00 - 21:30)</strong></span>
+        <span><i class="fas fa-map-marker-alt"></i> Hệ thống: 124 Nguyễn Văn Trỗi, Q. Phú Nhuận, TP.HCM</span>
+      </div>
+      <div class="top-bar-highlight">
+        <i class="fas fa-shield-alt"></i> Cam kết cá khỏe 100% - Bảo hành vận chuyển an toàn toàn quốc
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Main Header & Navigation -->
+  <header class="main-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-fish"></i>
+          </div>
+          <span>Aqua</span>Paradise
+        </a>
+
+        <ul class="nav-menu" id="mobileMenu">
+          <li><a href="#hero" class="nav-link active">Trang Chủ</a></li>
+          <li><a href="products.html" class="nav-link">Sản Phẩm</a></li>
+          <li class="nav-dropdown">
+            <div class="nav-dropdown-heading">
+              <a href="#products" class="nav-link">Danh Mục Cá</a>
+              <button class="nav-dropdown-toggle" type="button" aria-label="Mở danh sách danh mục cá" aria-expanded="false" aria-controls="categoryDropdown">
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+            </div>
+            <ul class="category-dropdown" id="categoryDropdown">
+              <li><a href="#products" data-nav-category="all">Tất Cả Cá Cảnh</a></li>
+              <li><a href="#products" data-nav-category="dragon">Cá Rồng</a></li>
+              <li><a href="#products" data-nav-category="koi">Cá Koi & Cá Vàng</a></li>
+              <li><a href="#products" data-nav-category="betta">Cá Betta & Guppy</a></li>
+              <li><a href="#products" data-nav-category="discus">Cá Thần Tiên - Cá Dĩa</a></li>
+              <li><a href="#products" data-nav-category="aquascape">Cá Thủy Sinh Nhỏ</a></li>
+              <li><a href="#products" data-nav-category="predator">Cá Săn Mồi & Phong Thủy</a></li>
+            </ul>
+          </li>
+          <li><a href="#features" class="nav-link">Dịch Vụ & Bảo Hành</a></li>
+          <li><a href="#about" class="nav-link">Kinh Nghiệm Nuôi</a></li>
+          <li><a href="#footer" class="nav-link">Liên Hệ</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <button class="action-btn" onclick="toggleCart(true)" title="Giỏ hàng">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="badge-count" id="cartCount">0</span>
+          </button>
+          <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+      <div class="header-search-row">
+        <div class="search-main-row">
+          <div class="search-input-box">
+            <i class="fas fa-search search-icon"></i>
+            <input
+              type="text"
+              id="searchInput"
+              class="search-input"
+              placeholder="Nhập tên cá cảnh, xuất xứ (VD: Cá Rồng, Cá Koi, Thái Lan, Betta, Guppy...)"
+              autocomplete="off"
+            >
+            <button id="clearSearch" class="clear-search-btn" title="Xóa tìm kiếm">
+              <i class="fas fa-times-circle"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text-content">
+          <div class="hero-badge">
+            <i class="fas fa-sparkles"></i> Siêu Thị Cá Cảnh & Thủy Sinh
+          </div>
+          <h1 class="hero-title">
+            Nâng Tầm Không Gian Sống Với <span>Cá Cảnh Thuần Chủng</span>
+          </h1>
+          <p class="hero-desc">
+            Chuyên cung cấp các dòng cá cảnh phong thủy cao cấp: Cá Rồng, Cá Koi, Cá Dĩa, Cá Betta và sinh vật thủy sinh nhập khẩu. Đảm bảo form dáng chuẩn, màu sắc rực rỡ, bảo hành dài hạn.
+          </p>
+          <div class="hero-buttons">
+            <a href="#products" class="btn btn-primary">
+              <i class="fas fa-compass"></i> Khám Phá Ngay
+            </a>
+            <a href="#features" class="btn btn-outline">
+              <i class="fas fa-info-circle"></i> Quy Chuẩn Chăm Sóc
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h4>100+</h4>
+              <p>Loài Cá Độc Đáo</p>
+            </div>
+            <div class="stat-item">
+              <h4>100%</h4>
+              <p>Bảo Hành Sống Khỏe</p>
+            </div>
+            <div class="stat-item">
+              <h4>15k+</h4>
+              <p>Khách Hàng Hài Lòng</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <span class="hero-card-tag"><i class="fas fa-crown"></i> Siêu Phẩm Tuần Này</span>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjWxzEVwYHE7-lN0XxtSz6OLyUY-44GmwIbJ8dPG2_pQ&s=10" alt="Cá Rồng Huyết Long" class="hero-image">
+          <h3 style="color: white; font-size: 1.2rem; margin-bottom: 4px;">Cá Rồng Huyết Long F1</h3>
+          <p style="color: #94a3b8; font-size: 0.85rem; margin-bottom: 12px;">Dòng cá hoàng đế mang lại phú quý và tài lộc</p>
+          <button class="btn btn-primary" onclick="openDetailModal(1)" style="width: 100%; padding: 10px;">
+            <i class="fas fa-eye"></i> Xem Chi Tiết
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search, price and sorting filters -->
+  <section class="filter-search-section" id="products">
+    <div class="container">
+      <div class="filter-card-wrapper">
+        <!-- Sub Filter & Sort Controls -->
+        <div class="filter-sub-row">
+          <div class="filter-select-group">
+            <select id="priceSelect" class="custom-select">
+              <option value="all">-- Mức giá (Tất cả) --</option>
+              <option value="under-100k">Dưới 100.000đ</option>
+              <option value="100k-500k">100.000đ - 500.000đ</option>
+              <option value="500k-2m">500.000đ - 2.000.000đ</option>
+              <option value="above-2m">Trên 2.000.000đ</option>
+            </select>
+
+            <select id="sortSelect" class="custom-select">
+              <option value="default">-- Sắp xếp mặc định --</option>
+              <option value="price-asc">Giá: Thấp đến Cao</option>
+              <option value="price-desc">Giá: Cao đến Thấp</option>
+              <option value="name-asc">Tên cá: A đến Z</option>
+              <option value="rating-desc">Đánh giá cao nhất</option>
+            </select>
+
+            <button id="resetFilters" class="btn-reset">
+              <i class="fas fa-sync-alt"></i> Đặt lại bộ lọc
+            </button>
+          </div>
+
+          <div class="result-count-text">
+            Tìm thấy: <span id="resultCount">0</span> loài cá
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product List Display -->
+  <main class="container">
+    <div class="section-header">
+      <span class="section-subtitle">Bộ Sưu Tập Tuyển Chọn</span>
+      <h2 class="section-title">Danh Sách <span>Cá Cảnh Khỏe Đẹp</span></h2>
+    </div>
+
+    <!-- Product Grid dynamically rendered by JavaScript -->
+    <div class="products-grid" id="productsGrid"></div>
+  </main>
+
+  <!-- Features & Services Section -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Vì Sao Chọn AquaParadise</span>
+        <h2 class="section-title">Dịch Vụ & Tiêu Chuẩn <span>Hàng Đầu</span></h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-box">
+          <div class="feature-icon-wrap">
+            <i class="fas fa-truck-fast"></i>
+          </div>
+          <h4>Vận Chuyển Chuyên Dụng</h4>
+          <p>Đóng gói oxy áp suất cao, giữ ấm/mát nhiệt độ chuẩn giúp cá khỏe mạnh 100% khi tới tay khách hàng.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrap">
+            <i class="fas fa-heart-pulse"></i>
+          </div>
+          <h4>Bảo Hành Sống Khỏe 7 Ngày</h4>
+          <p>Cam kết 1 đổi 1 nếu cá gặp vấn đề do vận chuyển hoặc nguồn nước trong vòng 7 ngày đầu tiên.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrap">
+            <i class="fas fa-user-doctor"></i>
+          </div>
+          <h4>Tư Vấn Thủy Sinh Miễn Phí</h4>
+          <p>Đội ngũ chuyên gia sẵn sàng hỗ trợ kỹ thuật setup bể cá, cân bằng vi sinh và chữa bệnh cá 24/7.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrap">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h4>Nguồn Gốc Thuần Chủng</h4>
+          <p>Nhập khẩu trực tiếp từ các trại cá danh tiếng Thái Lan, Nhật Bản, Indonesia kèm chứng nhận gia phả.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Detail Modal -->
+  <div class="modal-overlay" id="productModal">
+    <div class="modal-container">
+      <button class="modal-close-btn" onclick="closeModal()" aria-label="Đóng">
+        <i class="fas fa-times"></i>
+      </button>
+      <div id="modalDetails"></div>
+    </div>
+  </div>
+
+  <!-- Shopping Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3><i class="fas fa-shopping-cart" style="color: var(--primary-color);"></i> Giỏ Hàng Cá Cảnh</h3>
+      <button class="modal-close-btn" onclick="toggleCart(false)" style="position: static; width: 32px; height: 32px;">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div class="cart-items-container" id="cartItemsContainer"></div>
+
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Tổng cộng:</span>
+        <span class="cart-total-price" id="cartTotalPrice">0 ₫</span>
+      </div>
+      <button class="btn btn-primary" style="width: 100%;" onclick="checkoutOrder()">
+        <i class="fas fa-credit-card"></i> Tiến Hành Đặt Mua
+      </button>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Footer -->
+  <footer class="main-footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <i class="fas fa-fish" style="color: var(--accent-cyan);"></i> Aqua<span>Paradise</span>
+          </div>
+          <p class="footer-desc">
+            AquaParadise là thiên đường cho người đam mê cá cảnh và thủy sinh. Chúng tôi mang đến vẻ đẹp thiên nhiên sống động và phong thủy thịnh vượng cho mọi không gian sống.
+          </p>
+          <div class="footer-socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Danh Mục Nổi Bật</h4>
+          <ul class="footer-links">
+            <li><a href="#products">Cá Rồng Huyết Long - Kim Long</a></li>
+            <li><a href="#products">Cá Koi Nhật Bản Thuần Chủng</a></li>
+            <li><a href="#products">Cá Dĩa & Cá Thần Tiên</a></li>
+            <li><a href="#products">Cá Betta & Guppy Thái Lan</a></li>
+            <li><a href="#products">Cá Thủy Sinh Bơi Đàn</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Hỗ Trợ Khách Hàng</h4>
+          <ul class="footer-links">
+            <li><a href="#">Chính sách bảo hành cá sống</a></li>
+            <li><a href="#">Hướng dẫn thả cá vào bể mới</a></li>
+            <li><a href="#">Quy trình đóng gói vận chuyển</a></li>
+            <li><a href="#">Phương thức thanh toán</a></li>
+            <li><a href="#">Tư vấn trị bệnh cá cảnh</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col" id="about">
+          <h4>Liên Hệ Cửa Hàng</h4>
+          <p style="margin-bottom: 8px; font-size: 0.9rem;"><i class="fas fa-map-pin" style="color: var(--accent-cyan); margin-right: 8px;"></i> QTSC 9 Building, Tô Ký, Trung Mỹ Tây, Hồ Chí Minh</p>
+          <p style="margin-bottom: 8px; font-size: 0.9rem;"><i class="fas fa-phone" style="color: var(--accent-cyan); margin-right: 8px;"></i> 0988 123 456</p>
+          <p style="margin-bottom: 8px; font-size: 0.9rem;"><i class="fas fa-envelope" style="color: var(--accent-cyan); margin-right: 8px;"></i> cskh@aquaparadise.vn</p>
+          <p style="font-size: 0.9rem;"><i class="fas fa-clock" style="color: var(--accent-cyan); margin-right: 8px;"></i> Giờ mở cửa: 08:00 - 21:30 hàng ngày</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© Nguyễn Minh Tiến - 2026 AquaParadise - Trang web cá cảnh tĩnh chuyên nghiệp. Thiết kế phục vụ môn học WEB1044.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JS -->
+  <script src="fish-products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
